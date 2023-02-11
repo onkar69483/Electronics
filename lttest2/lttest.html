@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LDR Count</title>
+  </head>
+  <body>
+    <h1>LDR Count: <span id="count"></span></h1>
+    <script>
+      function getCount() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("count").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.open("GET", "/", true);
+        xhr.send();
+      }
+      setInterval(getCount, 1000);
+    </script>
+  </body>
+</html>
