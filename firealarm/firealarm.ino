@@ -1,32 +1,26 @@
-int flamesensor = 8;
-int buzzer =12 ;
-int greenled = 6;
-int flame = LOW ;
+int irsensor = 5;
+int led = 4;
+int irvalue = LOW ;
+int count = 0;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  pinMode(flamesensor, INPUT);
-  pinMode(buzzer, OUTPUT);
-  pinMode(greenled, OUTPUT);
+  pinMode(irsensor, INPUT);
+  pinMode(led, OUTPUT);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-flame = digitalRead(flamesensor);
+irvalue = digitalRead(irsensor);
 
-
-  if (flame == LOW) {
-  Serial.println( " fire occured please be safe");
-  digitalWrite(greenled,LOW);
-  digitalWrite(buzzer, LOW);
+  if (irvalue == HIGH) {
+  count++;
+  digitalWrite(led,HIGH);
   delay (100);
   }
   else{
-
-  digitalWrite(greenled,HIGH);
-  digitalWrite(buzzer, HIGH);
+  digitalWrite(led,LOW);
   delay (100);
-  
-  }
+    }
 }

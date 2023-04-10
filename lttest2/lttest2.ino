@@ -5,7 +5,15 @@ SoftwareSerial espSerial(12, 13); // RX, TX
 int LDR1 = A0; //for ldr sensors
 int LDR2 = A1;
 int LDR3 = A2;
-int count = 0;
+int LDR4 = A3;
+int Intensity = 1020;
+
+int led1 = 18;
+int led2 = 10;
+int led3 = 11;
+int led4 = 19;
+
+int count = 4;
 
 
 int A = 9; //for 7segment display
@@ -25,12 +33,31 @@ pinMode(LDR1, INPUT);  //LDR Pins
 pinMode(LDR2, INPUT);
 pinMode(LDR3, INPUT);
 
+pinMode(led1, OUTPUT);
+pinMode(led2, OUTPUT);
+pinMode(led3, OUTPUT);
+pinMode(led4, OUTPUT);
+
+digitalWrite(led1, HIGH); 
+digitalWrite(led2, HIGH); 
+digitalWrite(led3, HIGH); 
+digitalWrite(led4, HIGH); 
+
+  digitalWrite(G, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(A, LOW);
+  digitalWrite(P, LOW);
+
 for(int pin = 2;pin<10;pin++){ // 7Segment display pins
   pinMode(pin,OUTPUT);
 }
 
   // Connect to Wi-Fi network
-  sendCommand("AT+CWJAP=\"your_ssid\",\"your_password\"");
+  sendCommand("AT+CWJAP=\"Galaxy\",\"prem356295143\"");
 
   // Start server
   sendCommand("AT+CIPMUX=1");
@@ -149,36 +176,57 @@ void loop() {
   int ldr1Value = analogRead(LDR1);
   int ldr2Value = analogRead(LDR2);
   int ldr3Value = analogRead(LDR3);
+  int ldr4Value = analogRead(LDR4);
+
+  Serial.println("Intensity1: " + String(ldr1Value));
+  Serial.println("Intensity2: " + String(ldr2Value));
+  Serial.println("Intensity3: " + String(ldr3Value));
+  Serial.println("Intensity4: " + String(ldr4Value)+"\n");
+
   
   // Check if any of the LDR sensors detects light
-  if (ldr1Value > 500 || ldr2Value > 500 || ldr3Value > 500) {  //change the intensity '500' accordingly
-    count++;
+  if (ldr1Value > Intensity || ldr2Value > Intensity || ldr3Value > Intensity || ldr4Value > Intensity) {  //change the intensity '500' accordingly
+    count--;
     Serial.println("Count: " + String(count));
   }
+   if (ldr1Value > Intensity) { 
+    digitalWrite(led1, LOW);  
+  }
+     if (ldr2Value > Intensity) { 
+    digitalWrite(led2, LOW);     
+  }
+     if (ldr3Value > Intensity) { 
+    digitalWrite(led3, LOW);   
+  }
+     if (ldr4Value > Intensity) { 
+    digitalWrite(led4, LOW);   
+  }
+  
 if (count == 0){ //Printing on 7 segment display
     zero();
     delay(1000);
   }
-  if (count == 1){
+ else if (count == 1){
     one();
     delay(1000);
   }
-  if (count == 2){
+ else if (count == 2){
     two();
     delay(1000);
   }
-  if (count == 3){
+ else if (count == 3){
     three();
     delay(1000);
   }
-  if (count == 4){
+ else if (count == 4){
     four();
     delay(1000);
   }
-    if (count == 5){
+  else  if (count == 5){
     five();
     delay(1000);
   }
+
   
   
   // Listen for incoming client connections
