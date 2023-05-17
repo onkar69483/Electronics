@@ -3,8 +3,8 @@
 #include <ESP8266WebServer.h>
 
 // Set up WiFi access credentials
-const char* ssid = "Galaxy";
-const char* password = "prem3562951413";
+const char* ssid = "";
+const char* password = "";
 
 // Initialize web server on port 80
 ESP8266WebServer server(80);
