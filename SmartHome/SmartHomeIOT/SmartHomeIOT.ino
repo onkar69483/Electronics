@@ -39,9 +39,9 @@
 
 /* Fill-in your Template ID (only if using Blynk.Cloud) */
 //#define BLYNK_TEMPLATE_ID   "YourTemplateID"
-#define BLYNK_TEMPLATE_ID "TMPL7DGXhZLW"
-#define BLYNK_DEVICE_NAME "SmartHomeIOT"
-#define BLYNK_AUTH_TOKEN "vRtBl3oKwAVz_yCbFRJEfABsjkpmXuIM"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_DEVICE_NAME ""
+#define BLYNK_AUTH_TOKEN ""
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -52,8 +52,8 @@ char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Galaxy";
-char pass[] = "prem3562951413";
+char ssid[] = "";
+char pass[] = "";
 
 void setup()
 {
