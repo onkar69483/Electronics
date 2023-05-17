@@ -3,12 +3,12 @@
 #include <UniversalTelegramBot.h>
 
 
-const char* ssid = "Galaxy";
-const char* password = "prem3562951413";
+const char* ssid = "";
+const char* password = "";
 
 
-#define BOTtoken "5849425913:AAFqswlMBhVxvxLoKkiqCpW6XGH6PbsHjhg"
-#define CHAT_ID "1093493235"
+#define BOTtoken ""
+#define CHAT_ID ""
 
 
 X509List cert(TELEGRAM_CERTIFICATE_ROOT);
