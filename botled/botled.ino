@@ -1,8 +1,8 @@
 #include "CTBot.h"
 CTBot myBot;
 
-String ssid = "Galaxy";     
-String pass = "prem3562951413"; 
+String ssid = "";     
+String pass = ""; 
 String token = "5651849401:AAEdhpyEUdbYx8Wx9pxgJvFJBHEIwQAq2JA";   
 
 const int led1 = 13; 
