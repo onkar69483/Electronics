@@ -14,10 +14,10 @@
 
 #include <map>
 
-#define WIFI_SSID         "Galaxy"    
-#define WIFI_PASS         "prem3562951413"
-#define APP_KEY           "bfcbe46d-4d6d-445e-b76c-65d9ff9ffbf0"      
-#define APP_SECRET        "e7dc6ae8-703e-4017-82c2-18fcc2a58e5d-64c00738-a8c2-4d3a-9dc9-14906294cc5f"   
+#define WIFI_SSID         ""    
+#define WIFI_PASS         ""
+#define APP_KEY           "bfcbe46d"      
+#define APP_SECRET        "e7dc6ae8"   
 
 
 //Enter the device IDs here
