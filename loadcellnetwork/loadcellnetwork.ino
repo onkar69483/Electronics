@@ -12,8 +12,8 @@ const int LOADCELL_SCK_PIN = 13;
 HX711 scale;
 
 // Replace with your network credentials
-const char* ssid = "Galaxy";
-const char* password = "prem3562951413";
+const char* ssid = "";
+const char* password = "";
 
 // Set web server port number to 80
 WiFiServer server(80);
