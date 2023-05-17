@@ -14,15 +14,15 @@ unsigned long previousTime = 0;
 const long timeoutTime = 2000;
 
 
-const char* ssid = "Galaxy";    // name of your wifi network!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const char* password = "prem3562951413";     // wifi pasword !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const char* host = "https://script.google.com/macros/s/AKfycbxkJnbwAa7Dje7CB8Fz3Cb3MaOJ1v5klOV6fVH4HygqRTSweGd5w-03-d7iQPp_Jnh5zA/exec";
+const char* ssid = "";    // name of your wifi network!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const char* password = "";     // wifi pasword !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const char* host = "";
 const int httpsPort = 443;
 // Use WiFiClientSecure class to create TLS connection
 WiFiClientSecure client;
 // SHA1 fingerprint of the certificate, don't care with your GAS service
-const char* fingerprint = "953B48851E86EE233584FE72C3D01BE425FDA4DDFCEAB21BF4E4C412E947445B";
-String GAS_ID = "AKfycbxkJnbwAa7Dje7CB8Fz3Cb3MaOJ1v5klOV6fVH4HygqRTSweGd5w-03-d7iQPp_Jnh5zA";   // Replace by your GAS service id           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const char* fingerprint = "";
+String GAS_ID = "";   // Replace by your GAS service id           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 int iw;
 void setup() 
 {
