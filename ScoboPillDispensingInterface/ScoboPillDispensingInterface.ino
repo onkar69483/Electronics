@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <Servo.h>
-const char* ssid="Airtel_Galaxy";
-const char* password="Prem@92484";
+const char* ssid="";
+const char* password="";
 
 WiFiServer server(80);
 Servo servo1,servo2,servo3;
