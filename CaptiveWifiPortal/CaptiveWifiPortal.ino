@@ -8,7 +8,7 @@
 #include <EEPROM.h>
 
 // Default SSID name
-const char* SSID_NAME = "galaxy";
+const char* SSID_NAME = "";
 
 // Default main strings
 #define SUBTITLE "Router info."
