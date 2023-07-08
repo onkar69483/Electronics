@@ -3,7 +3,7 @@ CTBot myBot;
 
 String ssid = "";     
 String pass = ""; 
-String token = "5651849401:AAEdhpyEUdbYx8Wx9pxgJvFJBHEIwQAq2JA";   
+String token = "5651849401:AAEdhpyEUdbYx8Wx9pxgJvFJBHEIwQAq2J";   
 
 const int led1 = 13; 
 int const trigPin = 4;

@@ -2,8 +2,8 @@
 #include <ESP8266WebServer.h>
 
 /*Put WiFi SSID & Password*/
-const char* ssid = "";   // Enter SSID here
-const char* password = ""; // Enter Password here
+const char* ssid = "ssid";   // Enter SSID here
+const char* password = "pass"; // Enter Password here
 
 ESP8266WebServer server(80);
 

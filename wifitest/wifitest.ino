@@ -1,8 +1,8 @@
 #include <SoftwareSerial.h>
 SoftwareSerial espSerial(12, 13);  // RX, TX pins of the ESP01 module
 
-const char* ssid = "";  // your network SSID (name)
-const char* password = "";  // your network password
+const char* ssid = "LHBC_Student";  // your network SSID (name)
+const char* password = "lhbc@symbiosis";  // your network password
 
 void setup() {
   Serial.begin(9600);

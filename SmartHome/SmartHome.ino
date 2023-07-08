@@ -16,13 +16,13 @@
 
 #include <map>
 
-#define WIFI_SSID         ""    
-#define WIFI_PASS         ""
-#define APP_KEY           ""      
-#define APP_SECRET        ""   
+#define WIFI_SSID         "ssid"    
+#define WIFI_PASS         "pass"
+#define APP_KEY           "bfcbe46d-4d6d-445e-b76c-"      
+#define APP_SECRET        "e7dc6ae8-703e-4017-82c2-18fcc2a58e5d-a8c2-4d3a-9dc9-14906294cc5f"   
 
-#define BOTtoken ""
-#define CHAT_ID ""
+#define BOTtoken "5651849401:AAEdhpyEUdbYx8Wx9pxgJvFJBHEIwQAq2"
+#define CHAT_ID "10934932"
 
 
 X509List cert(TELEGRAM_CERTIFICATE_ROOT);
@@ -39,9 +39,9 @@ int flame = LOW ;
 
 
 //Enter the device IDs here
-#define device_ID_1   "638c2560b8a7fefbd65364bf"
-#define device_ID_2   "638c2546b8a7fefbd6536497"
-#define device_ID_3   "638c2358b8a7fefbd653628d"
+#define device_ID_1   "638c2560b8a7fefbd65364"
+#define device_ID_2   "638c2546b8a7fefbd65364"
+#define device_ID_3   "638c2358b8a7fefbd65362"
 
 // define the GPIO connected with Relays and switches
 #define RelayPin1 5  //D1

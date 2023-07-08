@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <Servo.h>
 
-const char* ssid = "your_SSID";  // Replace with your network name
-const char* password = "your_PASSWORD";  // Replace with your network password
+const char* ssid = "ssid";  // Replace with your network name
+const char* password = "pass";  // Replace with your network password
 
 WiFiServer server(80);
 Servo servo;

@@ -57,7 +57,7 @@ for(int pin = 2;pin<10;pin++){ // 7Segment display pins
 }
 
   // Connect to Wi-Fi network
-  sendCommand("AT+CWJAP=\"Galaxy\",\"prem356295143\"");
+  sendCommand("AT+CWJAP=\"ssid\",\"pass\"");
 
   // Start server
   sendCommand("AT+CIPMUX=1");

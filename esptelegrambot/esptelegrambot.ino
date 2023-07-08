@@ -2,11 +2,11 @@
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
 
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "ssid";
+const char* password = "pass";
 
-#define BOTtoken ""
-#define CHAT_ID ""
+#define BOTtoken "5651849401:AAEdhpyEUdbYx8Wx9pxgJvFJBHEIwQAq2"
+#define CHAT_ID "10934932"
 
 int button = 5;
 int led = 4;

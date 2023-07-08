@@ -16,13 +16,13 @@ const long timeoutTime = 2000;
 
 const char* ssid = "";    // name of your wifi network!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 const char* password = "";     // wifi pasword !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const char* host = "";
+const char* host = "https://script.google.com/macros/s/H4HygqRTSweGd5w-03-d7iQPp_Jnh5zA/exec";
 const int httpsPort = 443;
 // Use WiFiClientSecure class to create TLS connection
 WiFiClientSecure client;
 // SHA1 fingerprint of the certificate, don't care with your GAS service
-const char* fingerprint = "";
-String GAS_ID = "";   // Replace by your GAS service id           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const char* fingerprint = "2C3D01BE425FDA4DDFCEAB21BF4E4C412E947445B";
+String GAS_ID = "B8Fz3Cb3MaOJ1v5klOV6fVH4HygqRTSweGd5w-03-d7iQPp_Jnh5zA";   // Replace by your GAS service id           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 int iw;
 void setup() 
 {
